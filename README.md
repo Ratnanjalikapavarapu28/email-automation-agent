@@ -17,38 +17,37 @@ An AI-powered Email Automation system that generates and sends smart emails usin
 
 ## 🏗️ Project Structure
 
+```bash
 email-automation-agent/
 │
-├── app.py                  # Main entry (Streamlit)
+├── app.py # Main Streamlit entry point
 │
-├── core/                   # AI logic (IMPORTANT PART)
-│   ├── planner.py
-│   ├── executor.py
-│   └── email_agent.py
+├── agent/ # Core AI logic
+│ ├── email_agent.py
+│ ├── planner.py
+│ └── executor.py
 │
-├── utils/                  # Helper functions
-│   ├── email_sender.py
-│   ├── logger.py
+├── config/ # Configuration settings
+│ └── settings.py
 │
-├── config/                 # Settings
-│   └── settings.py
+├── frontend/ # Streamlit UI
+│ └── ui.py
 │
-├── frontend/               # UI layer
-│   └── ui.py
+├── tools/ # Utilities (email, logging, tests)
+│ ├── email_sender.py
+│ ├── logger.py
+│ ├── test_email.py
+│ └── test_smpt.py
 │
-├── templates/              # Email templates
-│   ├── welcome.txt
-│   ├── reminder.txt
-│   └── internship.txt
+├── templates/ # Email templates
+│ ├── welcome.txt
+│ ├── reminder.txt
+│ └── internship.txt
 │
-├── tests/                  # Test files (rename tools → tests)
-│   ├── test_email.py
-│   └── test_smtp.py
-│
-├── .env                    # ignored
-├── .gitignore
 ├── requirements.txt
+├── .gitignore
 └── README.md
+```
 
 ## ⚙️ Installation
 
